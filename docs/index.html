@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="/vendor/vue.css">
+	<!-- inject css file -->
+	<link rel="stylesheet" href="/vendor/vuep.css">
+	<link rel="stylesheet" href="/libs/netposa-xui.css">
+	<link rel="stylesheet" href="/libs/jsonview/jquery.jsonview.css">
+	<link rel="stylesheet" href="/libs/ztree/zTreeStyle/zTreeStyle.css">
+	<style>
+		.markdown-section {
+			max-width: 1000px;
+		}
+
+		.vuep {
+			height: auto;
+			flex-direction: column-reverse;
+		}
+
+		.vuep>div {
+			width: 100%;
+		}
+
+		.vuep>.vuep-editor .CodeMirror {
+			font-size: 12px;
+			font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace !important;
+		}
+
+		.vuep>.vuep-preview,
+		.vuep>.vuep-error {
+			padding: 20px;
+		}
+
+		.jsonview {
+			padding: 10px;
+			font-size: 14px;
+			font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+		}
+
+		.jsonview .null {
+			color: red;
+		}
+
+		.jsonview .bool {
+			color: #fde3a7;
+		}
+
+		.jsonview .num {
+			color: #bf55ec;
+		}
+
+		.jsonview .string {
+			color: #00b16a;
+			white-space: pre-wrap;
+		}
+		#copy-right {
+			position: fixed;
+			bottom: 0;
+			left:45%
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<a href="#/common/icon">图标</a>
+		<a href="#/components/base/button">组件</a>
+	</nav>
+	<div id="copy-right">版权所有：东方网力科技股份有限公司西安研发基地</div>
+	<div id="app">Please wait...</div>
+	<script>
+		window.$docsify = {
+			name: 'NetPosa-XUI',
+			repo: '',
+			loadNavbar: true,
+			loadSidebar: 'sidebar.md',
+			coverpage: true,
+			subMaxLevel: 2,
+			noEmoji: true
+		}
+	</script>
+	<script src="/libs/jquery/jquery.min.js"></script>
+	<script src="/libs/jsonview/jquery.jsonview.js"></script>
+	<script src="/libs/ztree/jquery.ztree.all-3.5.min.js"></script>
+	<script src="/libs/ztree/jquery.ztree.exhide.min.js"></script>
+	<script src="/vendor/babel.min.js"></script>
+	<script src="/vendor/vue.min.js"></script>
+	<script src="/vendor/vuep.min.js"></script>
+	<script src="/libs/netposa-xui.js"></script>
+	<script src="/vendor/docsify.min.js"></script>
+</body>
+
+</html>

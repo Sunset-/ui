@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "element-ui": "^2.4.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.9.0",
+    "promise-polyfill": "^8.0.0",
+    "sass-loader": "^7.0.2",
+    "vue-upload-component": "^2.8.8"
+  },
+  "dependencies": {
+    "vue-upload-component": "^2.8.8"
+  }
+}

@@ -1,0 +1,37 @@
+$color: rgba(#464c5b, 0.9);
+
+.xui-pop-wrap {
+	position: absolute;
+	z-index: 9999;
+	padding: 1px;
+	color: #333;
+	font-size: 12px;
+	border-radius: 2px;
+	transform: translate(-50%, -100%);
+	box-shadow: 0px 0px 27px lighten(#8c8c8c, 24%);
+	background: #4081ff;
+	.xui-pop-wrap-inner {
+		border-radius: 2px;
+		background: #f6f8fa;
+		padding: 5px 10px;
+	}
+	&:before,
+	&:after {
+		position: absolute;
+		left: 50%;
+		z-index: 1;
+		transform: translate(-50%, 0);
+		content: "";
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 6px 8px;
+		bottom: -12px;
+		border-color: #4081ff transparent transparent transparent;
+	}
+	&:after {
+		z-index: 2;
+		bottom: -11px;
+		border-color: #fff transparent transparent transparent;
+	}
+}
